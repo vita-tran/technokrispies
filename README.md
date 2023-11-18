@@ -1,7 +1,6 @@
-# Team Name: TechnoKrispies
+# Team Name: TechnoKrispies - HackEd2023 Project 
 
 
-## HackEd2023 Project 
 # Rem-med-ner
 
 ## Purpose
