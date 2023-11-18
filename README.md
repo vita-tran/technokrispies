@@ -8,7 +8,7 @@
 | Member Name | Member GitHub Link |  
 | --- | --- |
 | Vita Tran | [vita-tran](https://github.com/vita-tran) | 
-| Viktor Babych | UNKNOWN |
+| Viktor Babych | [FluffyWolf426](https://github.com/FluffyWolf426) |
 | Aaron Rahaman | [aarontrini1](https://github.com/aarontrini1) |
 | Rio Casanova |  [RioCasanova](https://github.com/RioCasanova) |
 
