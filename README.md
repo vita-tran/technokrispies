@@ -2,7 +2,7 @@
 
 
 # Rem-med-ner
-
+an online application that helps users take their medications consistently and helps them understand and adapt to their medications
 ## Purpose
 
 The purpose of this application is to remind users to take their meds and inform them about what they cannot mix with the medication, if they need to take the medication with food or water, and if they need to be reminded or warned not to operate a vehicle after taking the medication. 
