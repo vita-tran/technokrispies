@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import Link from "next/link";
+>>>>>>> d1a3b3ce01cc97e2565ef2e960120847344f02d1
 import Head from "next/head";
 import Image from "next/image";
 
@@ -8,6 +12,10 @@ import Container from "@mui/material/Container";
 // ============================================
 
 import NavBar from "../components/NavBar";
+<<<<<<< HEAD
+=======
+
+>>>>>>> d1a3b3ce01cc97e2565ef2e960120847344f02d1
 import ConnectPHP from "./api/ConnectPHP";
 
 // ============================================
