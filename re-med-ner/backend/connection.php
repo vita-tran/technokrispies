@@ -1,6 +1,6 @@
 <!-- Connecting to the database -->
-<?php require_once("data/connect.php"); ?>
-
+<?php require_once("/home/rcasanova2/data/connect.php"); ?>
+<?php header('Access-Control-Allow-Origin: http://localhost:3000/ '); ?>
 
 <!-- Main -->
 <?php
@@ -18,10 +18,10 @@ $select_by_id_sql = $connection->prepare("SELECT * FROM CustomersMedications WHE
 $update_customer_statement = $connection->prepare(
     "UPDATE CustomersMedications 
          SET first_name = ?, last_name = ?, phone_number = ?, medication = ?, email = ?, amount_mg = ?, frequency = ?, time_of_administration = ?, cycle_length_days = ? 
-         WHERE id = ?"
+         WHERE customer_id = ?"
 );
 $delete_statement = $connection->prepare(
-    "DELETE FROM CustomersMedications WHERE id = ?"
+    "DELETE FROM CustomersMedications WHERE customer_id = ?"
 );
 #endregion
 
@@ -116,24 +116,7 @@ function handle_database_error($statement)
 
 //Some PHP logic to process data
 $customer = get_customer_by_phone("780.444.4444");
-foreach ($customer as $x) {
-    $packet = [
-        'firstName' => $x['first_name'],
-        'lastName' => $x['last_name'],
-        'phone' => $x['phone_number'],
-        'medication' => $x['medication'],
-        'email' => $x['email'],
-        'amount_mg' => $x['amount_mg'],
-        'frequency' => $x['frequency'],
-        'time' => $x['time_of_administration'],
-        'cycle_length' => $x['cycle_length_days'],
 
-    ];
-
-    header('Access-Control-Allow-Origin: *');
-    header('Content-Type: application/json');
-    echo json_encode($packet);
-}
-
+echo json_encode($customer);
 #endregion
 ?>
