@@ -18,13 +18,17 @@ export default function NavBar(){
                 aria-label="menu"
                 sx={{ mr:2 }}
             >
-                {/* <MenuIcon /> */}
+                <MenuIcon />
                 
                 <Typography
                   variant="h6"
                   component="div"
-                  sx={{ flexGrow: 1 }}>
+                  sx={{ flexGrow: 1, ml: '2rem' }}>
                     Re-Med-Ner
+                </Typography>
+
+                <Typography>
+                    
                 </Typography>
                 
             </IconButton>
