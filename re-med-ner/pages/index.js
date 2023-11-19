@@ -1,3 +1,5 @@
+import {useState, useEffect} from 'react'
+
 import Head from "next/head";
 
 
@@ -7,9 +9,10 @@ import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import { useState, useEffect } from "react";
-
-
+import Input from '@mui/material/Input';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 
 // ============================================
@@ -17,19 +20,16 @@ import FormControl from '@mui/material/FormControl';
 import NavBar from "../components/NavBar";
 import ConnectPHP from "./api/ConnectPHP";
 
-// ============================================
-// PERSONAL NOTE FOR LATER: did these two lines of code come from the default code
-// import { Inter } from "next/font/google";
-// const inter = Inter({ subsets: ["latin"] });
-// ============================================
 
 export default function Home() {
   return (
     <div>
+
       <Head>
         <title>Re-Med-Ner</title>
         <meta name="description" content="Medication Reminder App" />
       </Head>
+
       {/* Here is where I am going to put the component for PHP */}
       <ConnectPHP />
       <NavBar />
@@ -41,34 +41,55 @@ export default function Home() {
 
         <Box
           component="form"
-          sx={{ width: 1 }}>
+          sx={{ width: 1}}>
             
             <div>
+            {/* ====================================================== */}
+            {/* PATIENT INFORMATION PORTION HERE */}
+            <Typography variant="h6" sx={{ width: '100%', m: '2rem 0rem' }}>
+              Patient Information
+
             <TextField
               required
               id="outlined-required"
-              label="Required"
-
-              sx={{ width: '45%', m: '2rem' }}
-
+              label="First Name"
+              sx={{ width: '40%', m: '2rem' }}
             />
 
             <TextField
               required
               id="outlined-required"
-              label="Required"
-              sx={{ width: '43%', m: '2rem' }}
+              label="Last Name"
+              sx={{ width: '40%', m: '2rem' }}
             />
 
             {/*  PHONE NUMBER OR EMAIL HERE  */}
+            </Typography>
+            {/* ====================================================== */}
 
+
+
+            {/* ====================================================== */} 
+            {/* MEDICATION INFORMATION PORTION HERE */}
+            <Typography variant="h6" sx={{ width: '100%', m: '2rem 0rem' }}>
+            Medication Details
+  
             <TextField
               required
               id="outlined-required"
-              label="Required"
-              defaultValue="Dosage Amount (mg)"
+              endAdornment={<InputAdornment position="end">mg</InputAdornment>}
+              label="Dosage Amount"
               sx={{ width: '40%', m: '2rem' }}
             />
+
+            <TextField
+              required
+              id="">
+
+            </TextField>
+            </Typography>
+            {/* ====================================================== */}
+
 
             </div>
         </Box>
