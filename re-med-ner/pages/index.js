@@ -1,14 +1,14 @@
-import Head from 'next/head';
+import Head from "next/head";
 // import Image from "next/image";
 
 // ============================================
 // Importing MUI components below
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import Box from '@mui/material/Box'
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
 // ============================================
 
-import NavBar from '@components/NavBar';
+import NavBar from "../components/NavBar";
 import ConnectPHP from "./api/ConnectPHP";
 
 // ============================================
@@ -22,7 +22,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Re-Med-Ner</title>
-          <ConnectPHP />
+        <ConnectPHP />
       </Head>
 
       <NavBar />
