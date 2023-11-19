@@ -17,8 +17,8 @@ function ConnectPHP() {
   }, []);
 
   return (
-    <div>
-      <h1>{message}</h1>
+    <div className="">
+      <h1 className="">{message}</h1>
     </div>
   );
 }
