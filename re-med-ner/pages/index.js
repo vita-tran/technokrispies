@@ -22,6 +22,7 @@ import Select from '@mui/material/Select';
 
 import NavBar from "../components/NavBar";
 import ConnectPHP from "./api/ConnectPHP";
+import { RadioGroup } from '@mui/material';
 
 
 
@@ -88,9 +89,23 @@ export default function Home() {
                  id="outlined-required"
                  label="Last Name"
                  onChange={handleInputChange}
+                 value={formInfo.lastName}
                  sx={{ width: '40%', m: '2rem' }}
                />
                
+               <FormControl
+                required
+                component="fieldset" 
+                >
+                  <RadioGroup
+                    name='contactMethod'
+                    value={formInfo.contactMethod}
+                  >
+                  
+                  </RadioGroup>
+
+               </FormControl>
+
                </Typography> 
               </Box>
       </form>
