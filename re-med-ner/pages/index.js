@@ -40,6 +40,10 @@ export default function Home() {
     console.log("testing submitting form")
   }
 
+  const handleInputChange = () => {
+    console.log("Inside of the handleInputChange function")
+  }
+
 
   return (
     <div>
@@ -56,23 +60,36 @@ export default function Home() {
       <form
         onSubmit={handleSubmit}>
 
+             {/* ====================================================== */}
+             {/* PATIENT INFORMATION PORTION HERE */}
+             <Box border={1} sx={{ p: '1rem'}}>
+               <Typography variant="h6" sx={{ width: '100%', m: '2rem 0rem' }}>
+                 Patient Information
+
+               <TextField
+                 required
+                 name='firstname'
+                 id="outlined-required"
+                 label="First Name"
+                 onChange={handleInputChange}
+                 sx={{ width: '40%', m: '2rem' }}
+               />
+
+               <TextField
+                 required
+                 name='lastname'
+                 id="outlined-required"
+                 label="Last Name"
+                 onChange={handleInputChange}
+                 sx={{ width: '40%', m: '2rem' }}
+               />
+               
+               </Typography> 
+              </Box>
       </form>
     </div>
 
 
-
-
-//     <div>
-
-//       <Head>
-//         <title>Re-Med-Ner</title>
-//         <meta name="description" content="Medication Reminder App" />
-//       </Head>
-
-//       {/* Here is where I am going to put the component for PHP 
-//       Just validating that the backend works*/}
-//       <ConnectPHP />
-//       <NavBar />
 
 //       <main>
 //       <Container sx={{paddingTop:2}} component="main" maxWidth="lg">
@@ -84,29 +101,7 @@ export default function Home() {
 //           component="form"
 //           sx={{ width: 1}}>
       
-//             {/* ====================================================== */}
-//             {/* PATIENT INFORMATION PORTION HERE */}
-//             <Box border={1} sx={{ p: '1rem'}}>
-//               <Typography variant="h6" sx={{ width: '100%', m: '2rem 0rem' }}>
-//                 Patient Information
 
-//               <TextField
-//                 required
-//                 name='firstname'
-//                 id="outlined-required"
-//                 label="First Name"
-//                 onChange={handleInputChange}
-//                 sx={{ width: '40%', m: '2rem' }}
-//               />
-
-//               <TextField
-//                 required
-//                 name='lastname'
-//                 id="outlined-required"
-//                 label="Last Name"
-//                 onChange={handleInputChange}
-//                 sx={{ width: '40%', m: '2rem' }}
-//               />
 
 //               {/*  PHONE NUMBER OR EMAIL HERE  */}
 
