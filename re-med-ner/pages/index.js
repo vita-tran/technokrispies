@@ -32,6 +32,12 @@ export default function Home() {
   // const [contactMethod, setContactMethod] = useState('');
   const [contactType, setContactType] = useState('');
 
+  const [formInfo, setFormInfo] = useState({
+    firstName: '',
+    lastName: '',
+    contact: ''
+  });
+
 
 
   // FORM FUNCTIONS 
@@ -72,6 +78,7 @@ export default function Home() {
                  id="outlined-required"
                  label="First Name"
                  onChange={handleInputChange}
+                 value={formInfo.firstName}
                  sx={{ width: '40%', m: '2rem' }}
                />
 
