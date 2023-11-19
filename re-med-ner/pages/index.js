@@ -49,7 +49,7 @@ export default function Home() {
               id="outlined-required"
               label="Required"
               defaultValue="First Name"
-              sx={{ width: '40%', m: '2rem' }}
+              sx={{ width: '45%', m: '2rem' }}
 
             />
 
@@ -58,7 +58,7 @@ export default function Home() {
               id="outlined-required"
               label="Required"
               defaultValue="Last Name"
-              sx={{ width: '40%', m: '2rem' }}
+              sx={{ width: '43%', m: '2rem' }}
             />
 
             {/*  PHONE NUMBER OR EMAIL HERE  */}
@@ -67,11 +67,9 @@ export default function Home() {
               required
               id="outlined-required"
               label="Required"
-              defaultValue="Last Name"
+              defaultValue="Dosage Amount (mg)"
+              sx={{ width: '40%', m: '2rem' }}
             />
-
-
-
 
             </div>
         </Box>

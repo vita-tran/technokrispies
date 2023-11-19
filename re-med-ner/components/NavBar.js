@@ -26,6 +26,10 @@ export default function NavBar(){
                   sx={{ flexGrow: 1 }}>
                     Re-Med-Ner
                 </Typography>
+
+                <Typography>
+                    
+                </Typography>
                 
             </IconButton>
             
