@@ -26,25 +26,9 @@ export default function NavBar(){
                   sx={{ flexGrow: 1, ml: '2rem' }}>
                     Re-Med-Ner
                 </Typography>
-
-                <Typography>
-                    
-                </Typography>
                 
             </IconButton>
             
         </Toolbar>
     </AppBar>
 }
-
-// export default function NavBar(props) {
-//     return <AppBar position="static">
-//       <Toolbar>
-//         <Link href="/">
-//           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-//               TECHNOKRISPIES
-//           </Typography>
-//         </Link>
-//       </Toolbar>
-//     </AppBar>
-//   }
