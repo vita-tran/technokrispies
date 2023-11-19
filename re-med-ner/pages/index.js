@@ -22,10 +22,13 @@ export default function Home() {
     <div>
       <Head>
         <title>Re-Med-Ner</title>
+        <meta name="description" content="Medication Reminder App" />
         <ConnectPHP />
       </Head>
 
       <NavBar />
+
+      
     </div>
   );
 }
