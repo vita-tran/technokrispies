@@ -6,7 +6,9 @@ function ConnectPHP() {
 
   useEffect(() => {
     // Fetch data from PHP backend when the component mounts
-    fetch("http://your-backend-server/api/data.php")
+    fetch(
+      "http://localhost/projects/technokrispies/re-med-ner/backend/connection.php"
+    )
       .then((response) => response.json())
       .then((data) => {
         setMessage(data.message);
@@ -21,4 +23,4 @@ function ConnectPHP() {
   );
 }
 
-export default App;
+export default ConnectPHP;
