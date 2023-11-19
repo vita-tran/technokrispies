@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Head from 'next/head';
 import Image from "next/image";
 
@@ -7,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container'
 // ============================================
 
-import NavBar from '@components/NavBar';
+import NavBar from '../components/NavBar';
 
 
 // ============================================
