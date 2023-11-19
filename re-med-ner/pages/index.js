@@ -48,7 +48,7 @@ export default function Home() {
               required
               id="outlined-required"
               label="Required"
-              defaultValue="First Name"
+
               sx={{ width: '45%', m: '2rem' }}
 
             />
@@ -57,7 +57,6 @@ export default function Home() {
               required
               id="outlined-required"
               label="Required"
-              defaultValue="Last Name"
               sx={{ width: '43%', m: '2rem' }}
             />
 
