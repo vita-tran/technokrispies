@@ -29,8 +29,8 @@ export default function Home() {
         <title>Re-Med-Ner</title>
         <meta name="description" content="Medication Reminder App" />
       </Head>
-
-      {/* Here is where I am going to put the component for PHP */}
+      {/* Here is where I am going to put the component for PHP 
+      Just validating that the backend works*/}
       <ConnectPHP />
       <NavBar />
 
