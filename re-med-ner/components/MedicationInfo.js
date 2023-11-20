@@ -4,7 +4,6 @@ export default async function returnDrugDetails(drugName) {
     const drugNameData = await response.json();
     
     giveDrugData(drugNameData.results[0]);
-  
 } 
   
 function minifyData(drugInfo) {

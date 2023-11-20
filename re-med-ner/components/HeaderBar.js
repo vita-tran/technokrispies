@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { IconButton } from '@mui/material';
 
 export default function HeaderBar(){
-        return <AppBar position="static" sx={{ height:'17rem'}}>
+        return <AppBar position="static" sx={{ height:'17rem', backgroundColor: '#686e65'}}>
                 <Toolbar sx={{
                     marginTop: 10,
                     display: 'flex',
@@ -20,13 +20,14 @@ export default function HeaderBar(){
                         <Typography
                         variant="h2"
                         component="div"
-                        sx={{ flexGrow: 1, ml: '2rem' }}>
+                        sx={{ flexGrow: 1, ml: '2rem', color: "white" }}>
                             Re-Med-Ner
                         </Typography>
 
                         <Typography
                         variant="h6"
-                        component="div">
+                        component="div"
+                        sx={{color: "white"}}>
                             So you never have to worry about forgetting to take your medication again
                         </Typography>
                 </Toolbar>
